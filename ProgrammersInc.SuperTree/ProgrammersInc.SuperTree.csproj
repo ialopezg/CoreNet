@@ -1,0 +1,93 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C022597B-2325-46C1-936D-03C51DD1B048}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProgrammersInc</RootNamespace>
+    <AssemblyName>ProgrammersInc.SuperTree</AssemblyName>
+    <SignAssembly>True</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\ProgrammersInc.snk</AssemblyOriginatorKeyFile>
+    <DelaySign>False</DelaySign>
+    <AssemblyOriginatorKeyMode>File</AssemblyOriginatorKeyMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <BaseAddress>9437184</BaseAddress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <BaseAddress>9437184</BaseAddress>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\GlobalAssemblyInfo.cs">
+      <Link>Configuration\GlobalAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Configuration\AssemblyInfo.cs" />
+    <Compile Include="EventTypes.cs" />
+    <Compile Include="Internal\AnimatedVerticalPositioning.cs" />
+    <Compile Include="Internal\AnimationRequests.cs" />
+    <Compile Include="Internal\StaticVerticalPositioning.cs" />
+    <Compile Include="Internal\TreeState.cs" />
+    <Compile Include="ITreeEvents.cs" />
+    <Compile Include="ITreeInfo.cs" />
+    <Compile Include="IRenderer.cs" />
+    <Compile Include="Renderers\StandardRenderer.cs" />
+    <Compile Include="TreeControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TreeControl.Designer.cs">
+      <DependentUpon>TreeControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TreeControlWatch.cs" />
+    <Compile Include="TreeNode.cs" />
+    <Compile Include="Internal\VerticalPositioning.cs" />
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TreeControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TreeControl.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ProgrammersInc.Utility\ProgrammersInc.Utility.csproj">
+      <Project>{D3B89D5E-2788-40C7-AD71-128C42216B9E}</Project>
+      <Name>ProgrammersInc.Utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ProgrammersInc.WinFormsUtility\ProgrammersInc.WinFormsUtility.csproj">
+      <Project>{AFF75B02-8754-44C5-9941-458AB013A1AF}</Project>
+      <Name>ProgrammersInc.WinFormsUtility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

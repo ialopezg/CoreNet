@@ -1,0 +1,386 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{46A18A55-5AE8-49CE-91CD-C7421B642E7E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProgrammersInc</RootNamespace>
+    <AssemblyName>ProgrammersInc</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SignAssembly>True</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\ProgrammersInc.snk</AssemblyOriginatorKeyFile>
+    <DelaySign>False</DelaySign>
+    <AssemblyOriginatorKeyMode>File</AssemblyOriginatorKeyMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\ProgrammersInc.XML</DocumentationFile>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\GlobalAssemblyInfo.cs">
+      <Link>Configuration\GlobalAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="CommandButtonResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CommandButtonResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Forms\Buttons\CommandButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\Buttons\CommandButton.Designer.cs">
+      <DependentUpon>CommandButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Forms\MessageBoxes\VistaMessageBox.cs" />
+    <Compile Include="Windows\Forms\ProgressBar\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\ProgressBar\ProgressBar.Designer.cs">
+      <DependentUpon>ProgressBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Forms\ProgressBar\ToolStripProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\Renderer\BaseColorTable.cs" />
+    <Compile Include="Windows\Forms\Renderer\BaseRenderer.cs" />
+    <Compile Include="Windows\Forms\Renderer\ColorTableBlack.cs" />
+    <Compile Include="Windows\Forms\Renderer\ColorTableBlue.cs" />
+    <Compile Include="Windows\Forms\Renderer\Office2007BlackColorTable.cs" />
+    <Compile Include="Windows\Forms\Renderer\Office2007BlueColorTable.cs" />
+    <Compile Include="Windows\Forms\Renderer\Office2007Renderer.cs" />
+    <Compile Include="Windows\Forms\Renderer\Office2007SilverColorTable.cs" />
+    <Compile Include="Windows\Forms\Renderer\OfficeColorTable.cs" />
+    <Compile Include="Windows\Forms\Renderer\ProfessionalColorTable.cs" />
+    <Compile Include="Windows\Forms\Splitters\Designers\CollapsibleSplitterDesigner.cs" />
+    <Compile Include="Windows\Forms\TaskDialog\frmTaskDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\TaskDialog\frmTaskDialog.designer.cs">
+      <DependentUpon>frmTaskDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Forms\TaskDialog\TaskDialog.cs" />
+    <Compile Include="Windows\Forms\TaskDialog\VistaActiveTaskDialog.cs" />
+    <Compile Include="Windows\Forms\TaskDialog\VistaTaskDialog.cs" />
+    <Compile Include="Windows\Forms\TaskDialog\VistaTaskDialogCommonDialog.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\TaskDialog\VistaTaskDialogNotificationArgs.cs" />
+    <Compile Include="Windows\Forms\TaskDialog\VistaUnsafeNativeMethods.cs" />
+    <Compile Include="Windows\Forms\TreeView\Interfaces\ITreeInfo.cs" />
+    <Compile Include="Windows\Forms\TreeView\TreeView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\TreeView\TreeView.Designer.cs">
+      <DependentUpon>TreeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Forms\XPander\BasePanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\XPander\CaptionStyle.cs" />
+    <Compile Include="Windows\Forms\XPander\ColorScheme.cs" />
+    <Compile Include="Windows\Forms\XPander\ColorSchemeChangeEventArgs.cs" />
+    <Compile Include="Windows\Forms\XPander\Constants.cs" />
+    <Compile Include="Windows\Forms\XPander\CustomColors.cs" />
+    <Compile Include="Windows\Forms\XPander\CustomPanelColors.cs" />
+    <Compile Include="Windows\Forms\XPander\CustomXPanderPanelColors.cs" />
+    <Compile Include="Windows\Forms\XPander\DisplayInformation.cs" />
+    <Compile Include="Windows\Forms\XPander\HoverState.cs" />
+    <Compile Include="Windows\Forms\XPander\HoverStateChangeEventArgs.cs" />
+    <Compile Include="Windows\Forms\XPander\IPanel.cs" />
+    <Compile Include="Windows\Forms\XPander\Panel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\XPander\Panel.Designer.cs">
+      <DependentUpon>Panel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Forms\XPander\PanelColors.cs" />
+    <Compile Include="Windows\Forms\XPander\PanelColorsBlack.cs" />
+    <Compile Include="Windows\Forms\XPander\PanelColorsBlue.cs" />
+    <Compile Include="Windows\Forms\XPander\PanelColorsBse.cs" />
+    <Compile Include="Windows\Forms\XPander\PanelColorsOffice.cs" />
+    <Compile Include="Windows\Forms\XPander\PanelColorsOffice2007Black.cs" />
+    <Compile Include="Windows\Forms\XPander\PanelColorsOffice2007Blue.cs" />
+    <Compile Include="Windows\Forms\XPander\PanelColorsOffice2007Silver.cs" />
+    <Compile Include="Windows\Forms\XPander\PanelColorsRed.cs" />
+    <Compile Include="Windows\Forms\XPander\PanelSettingsManager.cs" />
+    <Compile Include="Windows\Forms\XPander\PanelStyle.cs" />
+    <Compile Include="Windows\Forms\XPander\PanelStyleChangeEventArgs.cs" />
+    <Compile Include="Windows\Forms\XPander\UseAntiAlias.cs" />
+    <Compile Include="Windows\Forms\XPander\UseClearTypeGridFit.cs" />
+    <Compile Include="Windows\Forms\XPander\XPanderPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\XPander\XPanderPanel.Designer.cs">
+      <DependentUpon>XPanderPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Forms\XPander\XPanderPanelList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\XPander\XPanderPanelList.Designer.cs">
+      <DependentUpon>XPanderPanelList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Forms\XPander\XPanderStateChangeEventArgs.cs" />
+    <Compile Include="Data\Bases\DataServer.cs" />
+    <Compile Include="Data\Bases\DataSource.cs" />
+    <Compile Include="Data\ConnectionSettings.cs" />
+    <Compile Include="Data\Database.cs" />
+    <Compile Include="Data\Enums\ConnectionType.cs" />
+    <Compile Include="Data\Interfaces\IDataSource.cs" />
+    <Compile Include="DateTimeService.cs" />
+    <Compile Include="IO\FileService.cs" />
+    <Compile Include="IO\Profiles\Ini.cs" />
+    <Compile Include="IO\Profiles\IProfile.cs" />
+    <Compile Include="IO\Profiles\IReadOnlyProfile.cs" />
+    <Compile Include="IO\Profiles\Profile.cs" />
+    <Compile Include="IO\Profiles\ProfileChangedArgs.cs" />
+    <Compile Include="IO\Profiles\ProfileChangeType.cs" />
+    <Compile Include="IO\Profiles\ProfileChangingArgs.cs" />
+    <Compile Include="IO\Profiles\Registry.cs" />
+    <Compile Include="GlobalResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GlobalResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="PanelResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PanelResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Forms\Designers\CustomPanelDesigner.cs" />
+    <Compile Include="Properties.cs" />
+    <Compile Include="PropertyChangedEventArgs.cs" />
+    <Compile Include="Security\Encryption.cs" />
+    <Compile Include="Security\Hex.cs" />
+    <Compile Include="Security\HexEncoder.cs" />
+    <Compile Include="Security\IEncode.cs" />
+    <Compile Include="StringService.cs" />
+    <Compile Include="Windows\Forms\Buttons\GlassButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Configuration\AssemblyInfo.cs" />
+    <Compile Include="Windows\Forms\ControlPaint\ControlPaint.cs" />
+    <Compile Include="Windows\Forms\Helpers\GraphicsTools.cs" />
+    <Compile Include="Windows\Forms\Helpers\UseAntiAlias.cs" />
+    <Compile Include="Windows\Forms\Helpers\UseClearTypeGridFit.cs" />
+    <Compile Include="Windows\Forms\Helpers\UseClipping.cs" />
+    <Compile Include="Windows\Forms\Ribbon\ColorTables\RibbonProfesionalRendererColorTable.cs" />
+    <Compile Include="Windows\Forms\Ribbon\ColorTables\RibbonProfesionalRendererColorTableBlack.cs" />
+    <Compile Include="Windows\Forms\Ribbon\Enums\RenderType.cs" />
+    <Compile Include="Windows\Forms\Ribbon\IContainsRibbonComponents.cs" />
+    <Compile Include="Windows\Forms\Ribbon\IContainsSelectableRibbonItems.cs" />
+    <Compile Include="Windows\Forms\Ribbon\IDropDownRibbonItem.cs" />
+    <Compile Include="Windows\Forms\Ribbon\IRibbonElement.cs" />
+    <Compile Include="Windows\Forms\Ribbon\IScrollableRibbonItem.cs" />
+    <Compile Include="Windows\Forms\Ribbon\Ribbon.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\Ribbon\RibbonButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\Ribbon\RibbonButtonCollection.cs" />
+    <Compile Include="Windows\Forms\Ribbon\RibbonTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\Ribbon\RibbonButtonDesigner.cs" />
+    <Compile Include="Windows\Forms\Ribbon\RibbonButtonList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\Ribbon\RibbonButtonListDesigner.cs" />
+    <Compile Include="Windows\Forms\Ribbon\RibbonButtonStyle.cs" />
+    <Compile Include="Windows\Forms\Ribbon\RibbonCanvasEventArgs.cs" />
+    <Compile Include="Windows\Forms\Ribbon\RibbonColorChooser.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\Ribbon\RibbonComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\Ribbon\RibbonComboBoxDesigner.cs" />
+    <Compile Include="Windows\Forms\Ribbon\RibbonContext.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\Ribbon\RibbonContextCollection.cs" />
+    <Compile Include="Windows\Forms\Ribbon\RibbonDesigner.cs" />
+    <Compile Include="Windows\Forms\Ribbon\RibbonDropDown.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\Ribbon\RibbonElementMeasureSizeEventArgs.cs" />
+    <Compile Include="Windows\Forms\Ribbon\RibbonElementPaintEventArgs.cs" />
+    <Compile Include="Windows\Forms\Ribbon\RibbonElementWithItemCollectionDesigner.cs" />
+    <Compile Include="Windows\Forms\Ribbon\RibbonItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\Ribbon\RibbonItemBoundsEventArgs.cs" />
+    <Compile Include="Windows\Forms\Ribbon\RibbonItemCollection.cs" />
+    <Compile Include="Windows\Forms\Ribbon\RibbonItemCollectionEditor.cs" />
+    <Compile Include="Windows\Forms\Ribbon\RibbonItemGroup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\Ribbon\RibbonItemGroupDesigner.cs" />
+    <Compile Include="Windows\Forms\Ribbon\RibbonItemGroupItemCollection.cs" />
+    <Compile Include="Windows\Forms\Ribbon\RibbonItemRenderEventArgs.cs" />
+    <Compile Include="Windows\Forms\Ribbon\RibbonPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\Ribbon\RibbonPanelCollection.cs" />
+    <Compile Include="Windows\Forms\Ribbon\RibbonPanelDesigner.cs" />
+    <Compile Include="Windows\Forms\Ribbon\RibbonPanelFlowDirection.cs" />
+    <Compile Include="Windows\Forms\Ribbon\RibbonPanelPopup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\Ribbon\RibbonPanelRenderEventArgs.cs" />
+    <Compile Include="Windows\Forms\Ribbon\RibbonPanelSizeMode.cs" />
+    <Compile Include="Windows\Forms\Ribbon\RibbonPopup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\Ribbon\Renderers\RibbonProfessionalRenderer.cs" />
+    <Compile Include="Windows\Forms\Ribbon\Renderers\RibbonRenderer.cs" />
+    <Compile Include="Windows\Forms\Ribbon\RibbonRenderEventArgs.cs" />
+    <Compile Include="Windows\Forms\Ribbon\RibbonSensor.cs" />
+    <Compile Include="Windows\Forms\Ribbon\RibbonSeparator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\Ribbon\RibbonTab.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\Ribbon\RibbonTabCollection.cs" />
+    <Compile Include="Windows\Forms\Ribbon\RibbonTabDesigner.cs" />
+    <Compile Include="Windows\Forms\Ribbon\RibbonTabRenderEventArgs.cs" />
+    <Compile Include="Windows\Forms\Splitters\Enums\SplitterState.cs" />
+    <Compile Include="Windows\Forms\Splitters\Enums\VisualStyles.cs" />
+    <Compile Include="Windows\Forms\Splitters\Splitter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\SummaryBox\SummaryBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\SummaryBox\SummaryBox.Designer.cs">
+      <DependentUpon>SummaryBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Forms\SummaryBox\SummaryBoxItem.cs" />
+    <Compile Include="Windows\Forms\SummaryBox\SummaryBoxItemCollection.cs" />
+    <Compile Include="Windows\Forms\TabbedStrip\SelectedTabChangedEventArgs.cs" />
+    <Compile Include="Windows\Forms\TabbedStrip\TabbedStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\TabbedStrip\TabbedStripButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\TabbedStrip\TabbedStripRenderer.cs" />
+    <Compile Include="Windows\Forms\TextBoxes\AcceptableCharacters.cs" />
+    <Compile Include="Windows\Forms\TextBoxes\FilterTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\TextBoxes\SerialNumberBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\TextBoxes\SerialNumberBox.Designer.cs">
+      <DependentUpon>SerialNumberBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Forms\TextBoxes\TextboxStyles.cs" />
+    <Compile Include="Windows\Forms\TextBoxes\XPTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Windows\Forms\Ribbon\ClassDiagram.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CommandButtonResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CommandButtonResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Forms\TaskDialog\frmTaskDialog.resx">
+      <DependentUpon>frmTaskDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Forms\TreeView\TreeView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TreeView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Forms\XPander\Panel.resx">
+      <DependentUpon>Panel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Forms\XPander\XPanderPanel.resx">
+      <DependentUpon>XPanderPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Forms\XPander\XPanderPanelList.resx">
+      <DependentUpon>XPanderPanelList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GlobalResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GlobalResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>PanelResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Forms\SummaryBox\SummaryBox.resx">
+      <DependentUpon>SummaryBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Forms\TextBoxes\SerialNumberBox.resx">
+      <DependentUpon>SerialNumberBox.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\green_arrow1.png" />
+    <None Include="Resources\green_arrow2.png" />
+    <Content Include="Windows\Forms\Buttons\GlassButton.bmp" />
+    <Content Include="Windows\Forms\Splitters\Splitter.bmp" />
+    <None Include="Resources\ChevronUp.png" />
+    <None Include="Resources\ChevronDown.png" />
+    <None Include="Resources\ChevronRight.png" />
+    <None Include="Resources\ChevronLeft.png" />
+    <None Include="Resources\CloseIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Utilities\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

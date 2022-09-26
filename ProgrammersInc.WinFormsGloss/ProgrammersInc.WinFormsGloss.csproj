@@ -1,0 +1,151 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4BFF592D-AFBB-4B3B-9050-37E91CFA14ED}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProgrammersInc.WinFormsGloss</RootNamespace>
+    <AssemblyName>ProgrammersInc.WinFormsGloss</AssemblyName>
+    <SignAssembly>True</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\ProgrammersInc.snk</AssemblyOriginatorKeyFile>
+    <DelaySign>False</DelaySign>
+    <AssemblyOriginatorKeyMode>File</AssemblyOriginatorKeyMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <BaseAddress>14680064</BaseAddress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <BaseAddress>14680064</BaseAddress>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\GlobalAssemblyInfo.cs">
+      <Link>Configuration\GlobalAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Commands\CommandAnimatedRibbonButtonItem.cs" />
+    <Compile Include="Commands\CommandRibbonButtonItem.cs" />
+    <Compile Include="Commands\CommandRibbonFactory.cs" />
+    <Compile Include="Commands\CommandSemiDropDownRibbonButtonItem.cs" />
+    <Compile Include="Configuration\AssemblyInfo.cs" />
+    <Compile Include="Controls\BigSplitter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\CollapsibleSplitContainer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\CollapsibleSplitContainer.Designer.cs">
+      <DependentUpon>CollapsibleSplitContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CustomTabControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\CustomTabControl.Designer.cs">
+      <DependentUpon>CustomTabControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ImagePreviewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ImagePreviewControl.Designer.cs">
+      <DependentUpon>ImagePreviewControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Ribbon\AnimationItem.cs" />
+    <Compile Include="Controls\Ribbon\ButtonItem.cs" />
+    <Compile Include="Controls\Ribbon\Context.cs" />
+    <Compile Include="Controls\Ribbon\DropDownButtonItem.cs" />
+    <Compile Include="Controls\Ribbon\ExtrasSection.cs" />
+    <Compile Include="Controls\Ribbon\FixedControlItem.cs" />
+    <Compile Include="Controls\Ribbon\GlossyRenderer.cs" />
+    <Compile Include="Controls\Ribbon\History.cs" />
+    <Compile Include="Controls\Ribbon\Item.cs" />
+    <Compile Include="Controls\Ribbon\NullItem.cs" />
+    <Compile Include="Controls\Ribbon\ProcessingItem.cs" />
+    <Compile Include="Controls\Ribbon\ProgressBarItem.cs" />
+    <Compile Include="Controls\Ribbon\Renderer.cs" />
+    <Compile Include="Controls\Ribbon\RibbonControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Ribbon\Section.cs" />
+    <Compile Include="Controls\Ribbon\SemiDropDownButtonItem.cs" />
+    <Compile Include="Controls\Ribbon\ToolBarGlossyRenderer.cs" />
+    <Compile Include="Controls\Ribbon\ToolBarRibbonControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Ribbon\ToolBarVerticalSeparator.cs" />
+    <Compile Include="Controls\Ribbon\Updates.cs" />
+    <Compile Include="Controls\Ribbon\VariableControlItem.cs" />
+    <Compile Include="Controls\SuperToolTip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\SuperToolTipManager.cs" />
+    <Compile Include="Controls\TreeControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Drawing\ColorTable.cs" />
+    <Compile Include="Drawing\GlowHistory.cs" />
+    <Compile Include="Drawing\GlowUpdates.cs" />
+    <Compile Include="Factories\RibbonFactory.cs" />
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ProgrammersInc.SuperTree\ProgrammersInc.SuperTree.csproj">
+      <Project>{C022597B-2325-46C1-936D-03C51DD1B048}</Project>
+      <Name>ProgrammersInc.SuperTree</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ProgrammersInc.Utility\ProgrammersInc.Utility.csproj">
+      <Project>{D3B89D5E-2788-40C7-AD71-128C42216B9E}</Project>
+      <Name>ProgrammersInc.Utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ProgrammersInc.VectorGraphics\ProgrammersInc.VectorGraphics.csproj">
+      <Project>{3A8E6317-DEEA-4D6E-8B8D-D4685BC3390B}</Project>
+      <Name>ProgrammersInc.VectorGraphics</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ProgrammersInc.WinFormsUtility\ProgrammersInc.WinFormsUtility.csproj">
+      <Project>{AFF75B02-8754-44C5-9941-458AB013A1AF}</Project>
+      <Name>ProgrammersInc.WinFormsUtility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\CollapsibleSplitContainer.resx">
+      <DependentUpon>CollapsibleSplitContainer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CustomTabControl.resx">
+      <DependentUpon>CustomTabControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Icons\Search24.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

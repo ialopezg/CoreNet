@@ -1,0 +1,110 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3A8E6317-DEEA-4D6E-8B8D-D4685BC3390B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProgrammersInc.VectorGraphics</RootNamespace>
+    <AssemblyName>ProgrammersInc.VectorGraphics</AssemblyName>
+    <SignAssembly>True</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\ProgrammersInc.snk</AssemblyOriginatorKeyFile>
+    <DelaySign>False</DelaySign>
+    <AssemblyOriginatorKeyMode>File</AssemblyOriginatorKeyMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <BaseAddress>13631488</BaseAddress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <BaseAddress>13631488</BaseAddress>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\GlobalAssemblyInfo.cs">
+      <Link>Configuration\GlobalAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Configuration\AssemblyInfo.cs" />
+    <Compile Include="Factories\Ellipse.cs" />
+    <Compile Include="Factories\GlossyBrush.cs" />
+    <Compile Include="Factories\HardShadow.cs" />
+    <Compile Include="Factories\Rectangle.cs" />
+    <Compile Include="Factories\RoundedRectangle.cs" />
+    <Compile Include="Factories\Shadow.cs" />
+    <Compile Include="Factories\SoftShadow.cs" />
+    <Compile Include="Factories\Transparency.cs" />
+    <Compile Include="Graphs\BarChart.cs" />
+    <Compile Include="Graphs\GraphSettings.cs" />
+    <Compile Include="Graphs\LineChart.cs" />
+    <Compile Include="Graphs\PieChart.cs" />
+    <Compile Include="Graphs\StaticData.cs" />
+    <Compile Include="Graphs\IData.cs" />
+    <Compile Include="Paint\Brushes.cs" />
+    <Compile Include="Paint\Color.cs" />
+    <Compile Include="Paint\Pens.cs" />
+    <Compile Include="Primitives\BoundsMarker.cs" />
+    <Compile Include="Primitives\Container.cs" />
+    <Compile Include="Primitives\Path.cs" />
+    <Compile Include="Primitives\PointMarker.cs" />
+    <Compile Include="Primitives\Text.cs" />
+    <Compile Include="Primitives\Visitor.cs" />
+    <Compile Include="Primitives\VisualItem.cs" />
+    <Compile Include="Renderers\Canvas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Renderers\Canvas.Designer.cs">
+      <DependentUpon>Canvas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Renderers\GdiPlusRenderer.cs" />
+    <Compile Include="Renderers\GdiPlusUtility.cs" />
+    <Compile Include="Renderers\Renderer.cs" />
+    <Compile Include="Styles\Lookup.cs" />
+    <Compile Include="Styles\Modifier.cs" />
+    <Compile Include="Styles\Modifiers\MarkerReplacementModifier.cs" />
+    <Compile Include="Styles\Modifiers\PathModifier.cs" />
+    <Compile Include="Styles\Modifiers\PathPaintModifier.cs" />
+    <Compile Include="Styles\Modifiers\RectangleMarkerReplacementModifier.cs" />
+    <Compile Include="Styles\Modifiers\SoftShadowModifier.cs" />
+    <Compile Include="Styles\Modifiers\TextFontModifier.cs" />
+    <Compile Include="Styles\Modifiers\TextModifier.cs" />
+    <Compile Include="Styles\Style.cs" />
+    <Compile Include="Styles\StyleSet.cs" />
+    <Compile Include="Types\Point.cs" />
+    <Compile Include="Types\Rectangle.cs" />
+    <Compile Include="Types\Vector.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ProgrammersInc.Utility\ProgrammersInc.Utility.csproj">
+      <Project>{D3B89D5E-2788-40C7-AD71-128C42216B9E}</Project>
+      <Name>ProgrammersInc.Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

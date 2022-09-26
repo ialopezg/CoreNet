@@ -1,0 +1,7 @@
+C:\Users\Developer\Documents\Downloads\Compressed\SuperTree_src\BinaryComponents.VectorGraphics\bin\Debug\BinaryComponents.VectorGraphics.dll
+C:\Users\Developer\Documents\Downloads\Compressed\SuperTree_src\BinaryComponents.VectorGraphics\bin\Debug\BinaryComponents.VectorGraphics.pdb
+C:\Users\Developer\Documents\Downloads\Compressed\SuperTree_src\BinaryComponents.VectorGraphics\bin\Debug\BinaryComponents.Utility.dll
+C:\Users\Developer\Documents\Downloads\Compressed\SuperTree_src\BinaryComponents.VectorGraphics\bin\Debug\BinaryComponents.Utility.pdb
+C:\Users\Developer\Documents\Downloads\Compressed\SuperTree_src\BinaryComponents.VectorGraphics\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Developer\Documents\Downloads\Compressed\SuperTree_src\BinaryComponents.VectorGraphics\obj\Debug\BinaryComponents.VectorGraphics.dll
+C:\Users\Developer\Documents\Downloads\Compressed\SuperTree_src\BinaryComponents.VectorGraphics\obj\Debug\BinaryComponents.VectorGraphics.pdb

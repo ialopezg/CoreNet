@@ -1,0 +1,17 @@
+G:\ProgrammersInc\Main\ProgrammersInc.Windows.Forms\Project\obj\Debug\ResolveAssemblyReference.cache
+G:\ProgrammersInc\Main\ProgrammersInc.Windows.Forms\Project\obj\Debug\ProgrammersInc.Windows.Forms.NavigateBarOptions.resources
+G:\ProgrammersInc\Main\ProgrammersInc.Windows.Forms\Project\obj\Debug\ProgrammersInc.Windows.Forms.scr.Resources.resources
+G:\ProgrammersInc\Main\ProgrammersInc.Windows.Forms\Project\obj\Debug\ProgrammersInc.Windows.Forms.SummaryBox.resources
+G:\ProgrammersInc\Main\ProgrammersInc.Windows.Forms\Project\obj\Debug\System.Windows.Forms.frmTaskDialog.resources
+G:\ProgrammersInc\Main\ProgrammersInc.Windows.Forms\Project\obj\Debug\ProgrammersInc.Windows.Forms.csproj.GenerateResource.Cache
+G:\ProgrammersInc\Main\ProgrammersInc.Windows.Forms\Project\obj\Debug\ProgrammersInc.Windows.Forms.dll
+F:\ProgrammerInc\Libraries\ProgrammersInc.Windows.Forms\Project\obj\Debug\ResolveAssemblyReference.cache
+F:\ProgrammerInc\Libraries\ProgrammersInc.Windows.Forms\Project\obj\Debug\ProgrammersInc.Windows.Forms.NavigateBarOptions.resources
+F:\ProgrammerInc\Libraries\ProgrammersInc.Windows.Forms\Project\obj\Debug\ProgrammersInc.Windows.Forms.scr.Resources.resources
+F:\ProgrammerInc\Libraries\ProgrammersInc.Windows.Forms\Project\obj\Debug\ProgrammersInc.Windows.Forms.SummaryBox.resources
+F:\ProgrammerInc\Libraries\ProgrammersInc.Windows.Forms\Project\obj\Debug\System.Windows.Forms.frmTaskDialog.resources
+F:\ProgrammerInc\Libraries\ProgrammersInc.Windows.Forms\Project\obj\Debug\ProgrammersInc.Windows.Forms.csproj.GenerateResource.Cache
+F:\ProgrammerInc\Libraries\ProgrammersInc.Windows.Forms\Project\obj\Debug\ProgrammersInc.Windows.Forms.dll
+F:\ProgrammerInc\Libraries\ProgrammersInc.Windows.Forms\Project\bin\Debug\ProgrammersInc.Windows.Forms.dll
+F:\ProgrammerInc\Libraries\ProgrammersInc.Windows.Forms\Project\bin\Debug\ProgrammersInc.Windows.Forms.pdb
+F:\ProgrammerInc\Libraries\ProgrammersInc.Windows.Forms\Project\obj\Debug\ProgrammersInc.Windows.Forms.pdb

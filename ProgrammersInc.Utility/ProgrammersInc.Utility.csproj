@@ -1,0 +1,96 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D3B89D5E-2788-40C7-AD71-128C42216B9E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProgrammersInc.Utility</RootNamespace>
+    <AssemblyName>ProgrammersInc.Utility</AssemblyName>
+    <SignAssembly>True</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\ProgrammersInc.snk</AssemblyOriginatorKeyFile>
+    <DelaySign>False</DelaySign>
+    <AssemblyOriginatorKeyMode>File</AssemblyOriginatorKeyMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <BaseAddress>12582912</BaseAddress>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <BaseAddress>12582912</BaseAddress>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\GlobalAssemblyInfo.cs">
+      <Link>Configuration\GlobalAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Assemblies\ManifestResources.cs" />
+    <Compile Include="Assemblies\TypeIndex.cs" />
+    <Compile Include="Collections\ComparativeTuple.cs" />
+    <Compile Include="Collections\EventingList.cs" />
+    <Compile Include="Collections\HashedList.cs" />
+    <Compile Include="Collections\Set.cs" />
+    <Compile Include="Configuration\AssemblyInfo.cs" />
+    <Compile Include="Connectivity\ConnectivityState.cs" />
+    <Compile Include="Console\Arguments.cs" />
+    <Compile Include="Control\MultipleComparer.cs" />
+    <Compile Include="Control\Flag.cs" />
+    <Compile Include="Control\NotFirst.cs" />
+    <Compile Include="Control\Once.cs" />
+    <Compile Include="File\History.cs" />
+    <Compile Include="Monitoring\ConnectivityState.cs" />
+    <Compile Include="Monitoring\Log.cs" />
+    <Compile Include="Monitoring\MouseHook.cs" />
+    <Compile Include="Monitoring\UserActivity.cs" />
+    <Compile Include="Net\AppNetOp.cs" />
+    <Compile Include="Net\StaticWebResponse.cs" />
+    <Compile Include="Registry\RegistrySet.cs" />
+    <Compile Include="Security\StringEncode.cs" />
+    <Compile Include="Security\StringToGuidEncoder.cs" />
+    <Compile Include="Security\PasswordHash.cs" />
+    <Compile Include="Serialization\Exceptions.cs" />
+    <Compile Include="Serialization\SimpleSerializer.cs" />
+    <Compile Include="Serialization\Stream\StreamingReader.cs" />
+    <Compile Include="Serialization\Stream\TypeHandlers.cs" />
+    <Compile Include="Serialization\Stream\StreamingWriter.cs" />
+    <Compile Include="Serialization\Stream\TypeIdentityPolicy.cs" />
+    <Compile Include="Threading\Progress.cs" />
+    <Compile Include="Threading\TryLock.cs" />
+    <Compile Include="Win32\Common.cs" />
+    <Compile Include="Win32\Dwmapi.cs" />
+    <Compile Include="Win32\Gdi.cs" />
+    <Compile Include="Win32\Kernel.cs" />
+    <Compile Include="Win32\Messages.cs" />
+    <Compile Include="Win32\Uac.cs" />
+    <Compile Include="Win32\User.cs" />
+    <Compile Include="Win32\UxTheme.cs" />
+    <Compile Include="Win32\Windows.cs" />
+    <Compile Include="Xml\Compare.cs" />
+    <Compile Include="Xml\DateTimeEx.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestHarness", "TestHarness\TestHarness.csproj", "{5D8E4357-14D1-452E-BFD9-41095C7FB065}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryComponents.VectorGraphics", "..\..\BinaryComponents.VectorGraphics.csproj", "{3A8E6317-DEEA-4D6E-8B8D-D4685BC3390B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryComponents.Utility", "..\..\..\BinaryComponents.Utility\BinaryComponents.Utility.csproj", "{D3B89D5E-2788-40C7-AD71-128C42216B9E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5D8E4357-14D1-452E-BFD9-41095C7FB065}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D8E4357-14D1-452E-BFD9-41095C7FB065}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D8E4357-14D1-452E-BFD9-41095C7FB065}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D8E4357-14D1-452E-BFD9-41095C7FB065}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A8E6317-DEEA-4D6E-8B8D-D4685BC3390B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A8E6317-DEEA-4D6E-8B8D-D4685BC3390B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A8E6317-DEEA-4D6E-8B8D-D4685BC3390B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A8E6317-DEEA-4D6E-8B8D-D4685BC3390B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3B89D5E-2788-40C7-AD71-128C42216B9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3B89D5E-2788-40C7-AD71-128C42216B9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3B89D5E-2788-40C7-AD71-128C42216B9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3B89D5E-2788-40C7-AD71-128C42216B9E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

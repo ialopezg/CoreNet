@@ -1,0 +1,5 @@
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\System.Windows.Forms.PanelResources.resources
+obj\Debug\System.Windows.Forms.SummaryBox.resources
+obj\Debug\System.Windows.Forms.SerialNumberBox.resources
+obj\Debug\ProgrammerInc.csproj.GenerateResource.Cache
